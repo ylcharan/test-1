@@ -13,18 +13,30 @@ const Contacts = () => {
         <div className="divider"></div>
         <p>
           contact me:{" "}
-          <a href="mailto:ylcharanofficial@gmail.com">
+          <a rel="noreferrer" href="mailto:ylcharanofficial@gmail.com">
             ylcharanofficial@gmail.com
           </a>
         </p>
         <div className="icons">
-          <a href="https://github.com/ylcharan" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://github.com/ylcharan"
+            target="_blank"
+          >
             <AiFillGithub />
           </a>
-          <a href="https://instagram.com/ylcharan" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://instagram.com/ylcharan"
+            target="_blank"
+          >
             <AiOutlineInstagram />
           </a>
-          <a href="https://twitter.com/ylcharan" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://twitter.com/ylcharan"
+            target="_blank"
+          >
             <AiFillTwitterSquare />
           </a>
         </div>

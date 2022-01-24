@@ -4,7 +4,6 @@ import SplitText from "gsap/SplitText";
 import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import img1 from "../../images/road_final.png";
-import img2 from "../../images/img2.png";
 
 gsap.registerPlugin(SplitText);
 const Project = () => {
