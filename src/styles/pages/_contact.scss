@@ -1,0 +1,20 @@
+.contacts {
+  color: #fff;
+  font-size: 1.4rem;
+  height: 91vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+  .icons {
+    fill: #fff;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    margin: 20px 10px;
+    cursor: pointer;
+  }
+}

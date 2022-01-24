@@ -1,0 +1,33 @@
+@import "../config/variable";
+
+.project {
+  color: #fff;
+  font-size: 1.4rem;
+  height: 91vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 1s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.swiper-slide {
+  width: 450px;
+  height: 300px;
+}
+
+.project-image-contaier {
+  height: 50%;
+}

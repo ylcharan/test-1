@@ -1,0 +1,27 @@
+@import "../config/variable";
+
+.about {
+  color: #fff;
+  font-size: 1.4rem;
+  min-height: 100vh;
+  background-color: #000;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+  &-intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $dark-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    // display: none;
+  }
+}

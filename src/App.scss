@@ -5,7 +5,15 @@
 
 //PAGES
 @import "./styles/pages/home";
+@import "./styles/pages/hero";
+@import "./styles/pages/about";
+@import "./styles/pages/resume";
+@import "./styles/pages/project";
+@import "./styles/pages/contact";
 
 //COMPONENTS
 @import "./styles/components/header";
 @import "./styles/components/footer";
+@import "./styles/components/divider";
+@import "./styles/components/button";
+@import "./styles/components/intro";
