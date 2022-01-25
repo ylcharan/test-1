@@ -32,23 +32,71 @@ const Header = () => {
     });
   }, []);
 
+  const HandleToggle = () => {
+    const primaryNav = document.querySelector(".header-list");
+    const visibility = primaryNav.getAttribute("toggle");
+    const b1 = document.querySelector(".hame-line-1");
+    const b2 = document.querySelector(".hame-line-2");
+    console.log(visibility);
+    if (visibility === "false") {
+      primaryNav.setAttribute("toggle", "true");
+      b1.setAttribute("toggle", "true");
+      b2.setAttribute("toggle", "true");
+    } else if (visibility === "true") {
+      primaryNav.setAttribute("toggle", "false");
+      b1.setAttribute("toggle", "false");
+      b2.setAttribute("toggle", "false");
+    }
+  };
   return (
     <div className="header">
-      <h1 className="header-main" onClick={() => navigate("/")}>
-        ylcharan
-      </h1>
-      <div className="header-list">
-        <h3 className="header-subs" onClick={() => navigate("/about")}>
-          About
+      <div className="header-main-con">
+        <div className="empty"></div>
+        <h1 className="header-main" onClick={() => navigate("/")}>
+          ylcharan
+        </h1>
+        <div onClick={() => HandleToggle()} className="hambrgur">
+          <div toggle="false" className="hame-line-1"></div>
+          <div className="invis"></div>
+          <div toggle="false" className="hame-line-2"></div>
+        </div>
+      </div>
+      <div toggle="false" className="header-list">
+        <h3
+          className="header-subs"
+          onClick={() => {
+            HandleToggle();
+            navigate("/about");
+          }}
+        >
+          <div className="wrapper">About</div>
         </h3>
-        <h3 className="header-subs" onClick={() => navigate("/resume")}>
-          resume
+        <h3
+          className="header-subs"
+          onClick={() => {
+            HandleToggle();
+            navigate("/resume");
+          }}
+        >
+          <div className="wrapper">resume</div>
         </h3>
-        <h3 className="header-subs" onClick={() => navigate("/projects")}>
-          projects
+        <h3
+          className="header-subs"
+          onClick={() => {
+            HandleToggle();
+            navigate("/projects");
+          }}
+        >
+          <div className="wrapper">projects</div>
         </h3>
-        <h3 className="header-subs" onClick={() => navigate("/contact")}>
-          contact
+        <h3
+          className="header-subs"
+          onClick={() => {
+            HandleToggle();
+            navigate("/contact");
+          }}
+        >
+          <div className="wrapper">contact</div>
         </h3>
       </div>
     </div>
